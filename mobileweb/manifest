@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+description: nfc
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2015 by Your Company
+
+# these should not be edited
+name: nfc
+moduleid: ta.nfc
+guid: b3089064-f941-40c8-8924-8aa9e8fc79cc
+platform: mobileweb
+minsdk: 5.1.1.GA

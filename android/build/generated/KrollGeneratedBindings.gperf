@@ -1,0 +1,62 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name NfcBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "ta.nfc.tech.TagTechnologyProxy.h"
+#include "ta.nfc.tech.TagTechnologyMifareUltralightProxy.h"
+#include "ta.nfc.records.NdefRecordExternalProxy.h"
+#include "ta.nfc.tech.TagTechnologyNfcFProxy.h"
+#include "ta.nfc.NdefMessageProxy.h"
+#include "ta.nfc.tech.TagTechnologyNfcAProxy.h"
+#include "ta.nfc.records.NdefRecordEmptyProxy.h"
+#include "ta.nfc.tech.TagTechnologyNfcVProxy.h"
+#include "ta.nfc.tech.TagTechnologyNdefProxy.h"
+#include "ta.nfc.records.NdefRecordTextProxy.h"
+#include "ta.nfc.NfcForegroundDispatchFilter.h"
+#include "ta.nfc.NfcModule.h"
+#include "ta.nfc.records.NdefRecordProxy.h"
+#include "ta.nfc.NfcTagProxy.h"
+#include "ta.nfc.records.NdefRecordApplicationProxy.h"
+#include "ta.nfc.records.NdefRecordSmartPosterProxy.h"
+#include "ta.nfc.tech.TagTechnologyNdefFormatableProxy.h"
+#include "ta.nfc.records.NdefRecordUriProxy.h"
+#include "ta.nfc.tech.TagTechnologyIsoDepProxy.h"
+#include "ta.nfc.NfcAdapterProxy.h"
+#include "ta.nfc.records.NdefRecordUnknownProxy.h"
+#include "ta.nfc.tech.TagTechnologyMifareClassicProxy.h"
+#include "ta.nfc.records.NdefRecordMediaProxy.h"
+#include "ta.nfc.tech.TagTechnologyNfcBProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+ta.nfc.tech.TagTechnologyProxy, ::ta::nfc::TagTechnologyProxy::bindProxy, ::ta::nfc::TagTechnologyProxy::dispose
+ta.nfc.tech.TagTechnologyMifareUltralightProxy, ::ta::nfc::nfc::TagTechnologyMifareUltralightProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyMifareUltralightProxy::dispose
+ta.nfc.records.NdefRecordExternalProxy, ::ta::nfc::nfc::NdefRecordExternalProxy::bindProxy, ::ta::nfc::nfc::NdefRecordExternalProxy::dispose
+ta.nfc.tech.TagTechnologyNfcFProxy, ::ta::nfc::nfc::TagTechnologyNfcFProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyNfcFProxy::dispose
+ta.nfc.NdefMessageProxy, ::ta::nfc::nfc::NdefMessageProxy::bindProxy, ::ta::nfc::nfc::NdefMessageProxy::dispose
+ta.nfc.tech.TagTechnologyNfcAProxy, ::ta::nfc::nfc::TagTechnologyNfcAProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyNfcAProxy::dispose
+ta.nfc.records.NdefRecordEmptyProxy, ::ta::nfc::nfc::NdefRecordEmptyProxy::bindProxy, ::ta::nfc::nfc::NdefRecordEmptyProxy::dispose
+ta.nfc.tech.TagTechnologyNfcVProxy, ::ta::nfc::nfc::TagTechnologyNfcVProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyNfcVProxy::dispose
+ta.nfc.tech.TagTechnologyNdefProxy, ::ta::nfc::nfc::TagTechnologyNdefProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyNdefProxy::dispose
+ta.nfc.records.NdefRecordTextProxy, ::ta::nfc::nfc::NdefRecordTextProxy::bindProxy, ::ta::nfc::nfc::NdefRecordTextProxy::dispose
+ta.nfc.NfcForegroundDispatchFilter, ::ta::nfc::nfc::NfcForegroundDispatchFilter::bindProxy, ::ta::nfc::nfc::NfcForegroundDispatchFilter::dispose
+ta.nfc.NfcModule, ::ta::nfc::NfcModule::bindProxy, ::ta::nfc::NfcModule::dispose
+ta.nfc.records.NdefRecordProxy, ::ta::nfc::NdefRecordProxy::bindProxy, ::ta::nfc::NdefRecordProxy::dispose
+ta.nfc.NfcTagProxy, ::ta::nfc::NfcTagProxy::bindProxy, ::ta::nfc::NfcTagProxy::dispose
+ta.nfc.records.NdefRecordApplicationProxy, ::ta::nfc::nfc::NdefRecordApplicationProxy::bindProxy, ::ta::nfc::nfc::NdefRecordApplicationProxy::dispose
+ta.nfc.records.NdefRecordSmartPosterProxy, ::ta::nfc::nfc::NdefRecordSmartPosterProxy::bindProxy, ::ta::nfc::nfc::NdefRecordSmartPosterProxy::dispose
+ta.nfc.tech.TagTechnologyNdefFormatableProxy, ::ta::nfc::nfc::TagTechnologyNdefFormatableProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyNdefFormatableProxy::dispose
+ta.nfc.records.NdefRecordUriProxy, ::ta::nfc::nfc::NdefRecordUriProxy::bindProxy, ::ta::nfc::nfc::NdefRecordUriProxy::dispose
+ta.nfc.tech.TagTechnologyIsoDepProxy, ::ta::nfc::nfc::TagTechnologyIsoDepProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyIsoDepProxy::dispose
+ta.nfc.NfcAdapterProxy, ::ta::nfc::nfc::NfcAdapterProxy::bindProxy, ::ta::nfc::nfc::NfcAdapterProxy::dispose
+ta.nfc.records.NdefRecordUnknownProxy, ::ta::nfc::NdefRecordUnknownProxy::bindProxy, ::ta::nfc::NdefRecordUnknownProxy::dispose
+ta.nfc.tech.TagTechnologyMifareClassicProxy, ::ta::nfc::nfc::TagTechnologyMifareClassicProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyMifareClassicProxy::dispose
+ta.nfc.records.NdefRecordMediaProxy, ::ta::nfc::nfc::NdefRecordMediaProxy::bindProxy, ::ta::nfc::nfc::NdefRecordMediaProxy::dispose
+ta.nfc.tech.TagTechnologyNfcBProxy, ::ta::nfc::nfc::TagTechnologyNfcBProxy::bindProxy, ::ta::nfc::nfc::TagTechnologyNfcBProxy::dispose
+%%
